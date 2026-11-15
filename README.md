@@ -2,9 +2,9 @@
 
 **English readers:** these are the exercise files for *Machine Vision Inspection with Raspberry Pi and Python: OpenCV, Camera Setup, OK/NG Decisions, Evidence Records, and Shop-Floor Operation* by Ryo Nishikido (the English edition of the Japanese book below).
 
-**[Download the materials ZIP (about 21 KB)](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/download/v1.4.0/raspberrypi_inspection_code.zip)**
+**[Download the materials ZIP (about 34 KB)](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/download/v1.5.0/raspberrypi_inspection_code.zip)**
 
-- Latest materials: v1.4.0 (November 6, 2026), file `raspberrypi_inspection_code.zip`. No GitHub account is needed.
+- Latest materials: v1.5.0 (November 15, 2026; adds the Chapter 18 touch-screen inspection screen `touch_screen_en.py` / `touch_screen.py`), file `raspberrypi_inspection_code.zip`. No GitHub account is needed.
 - On the release page, choose `raspberrypi_inspection_code.zip` under "Assets". "Source code (zip)" and "Source code (tar.gz)" do not contain the exercise code.
 - Extract the ZIP to get a `code` folder, open `README_EN.md` inside it, and start with the quick start in the Preface or with Chapter 3.
 - Tested on macOS with Python 3.10, OpenCV 5.0.0, and NumPy 2.2.6 using synthetic images. A real Raspberry Pi, cameras, PLCs, and continuous operation were not verified.
@@ -30,11 +30,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約21 KB）](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/download/v1.4.0/raspberrypi_inspection_code.zip)**
+**[教材ZIPをダウンロード（約34 KB）](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/download/v1.5.0/raspberrypi_inspection_code.zip)**
 
-- 最新の教材：v1.4.0（2026年11月6日。第10章の白い点を数える比較`speck_count.py`と自動試験を追加。これまでの検査コードは変わりません）
+- 最新の教材：v1.5.0（2026年11月15日。第18章の検査画面`touch_screen.py`（英語表示は`touch_screen_en.py`）と自動試験を追加。これまでの検査コードは変わりません）
 - ファイル名：`raspberrypi_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/tag/v1.4.0)
+- [この版の配布ページ](https://github.com/sunnishi/raspberrypi-inspection-book-materials/releases/tag/v1.5.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`raspberrypi_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」「Source code (tar.gz)」には、実習用のコードは入っていません。
 
@@ -48,12 +48,13 @@ ZIPを展開すると`code`フォルダーができます。書籍の「はじ�
 | 合成画像10枚と三つの検査設定を作る（第5章） | `generate_samples.py` |
 | 27項目の一括確認（第5章） | `verify.py` |
 | 白い点を数える比較（第10章、合成画像） | `speck_count.py` |
+| 7インチのタッチ画面向けの検査画面（第18章。英語表示は`touch_screen_en.py`） | `touch_screen.py` |
 | ラズパイのカメラで一枚撮る（第6章、実機用） | `capture_once.py`、`station_once.py` |
 | 記入用の帳票（付録B） | `templates` |
 
 ## 実行環境と検証範囲
 
-制作時の環境はmacOS、Python 3.10、OpenCV 5.0.0、NumPy 2.2.6です。合成画像による検査部分は、この環境で動作を確認しています。ラズパイ実機、カメラ、PLC、連続運転は未検証です。カメラ用のコードは、公式のAPIに沿って用意したもので、実機での受入確認が必要です。
+制作時の環境はmacOS、Python 3.10、OpenCV 5.0.0、NumPy 2.2.6です。合成画像による検査部分は、この環境で動作を確認しています。第18章の検査画面（`touch_screen.py`）は、macOS、Python 3.12、Tk 9.0で確認しました。ラズパイ実機・タッチ画面では動かしていません。ラズパイ実機、カメラ、PLC、連続運転は未検証です。カメラ用のコードは、公式のAPIに沿って用意したもので、実機での受入確認が必要です。
 
 ## 正誤表
 
